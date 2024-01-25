@@ -1,0 +1,18 @@
+- zip2john file.zip
+- zip2john file.zip> rame.hash
+no wordlist
+- john rame.hash
+shown wordlist
+zip2john file.zip>rame.hash
+- john rame.hash - -wordlist=wordlistfile
+starting or ending 50000 wordlist
+- tail -n 50000 wordlistfile > new.txt (30mm)
+- head -n 50000 wordistfile > ne w.txt (costsfyoto)
+- john rame.hash - - wordlist=new.txt
+length from 4-6
+- crunch 4 6 '123456789' > new.txt
+- John rame.hash - - wordlist=new.txt
+if user
+- sudo unshadow /etc/passwd /etc/shadow > nebismieri
+- John nebismieri
+- John --format=crypt - user=patricia - -incremental=digits nebismieri
